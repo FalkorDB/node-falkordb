@@ -1,8 +1,9 @@
-# @redis/graph
+# @falkordb/graph
 
 Example usage:
+
 ```javascript
-import { createClient, Graph } from 'redis';
+import { createClient, Graph } from 'falkordb';
 
 const client = createClient();
 client.on('error', (err) => console.log('Redis Client Error', err));

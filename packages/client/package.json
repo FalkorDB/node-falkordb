@@ -1,5 +1,5 @@
 {
-  "name": "@redis/client",
+  "name": "@falkordb/client",
   "version": "1.5.11",
   "license": "MIT",
   "main": "./dist/index.js",
