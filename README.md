@@ -1,50 +1,42 @@
-# Node-Redis
+# FalkorDB
 
-[![Tests](https://img.shields.io/github/actions/workflow/status/redis/node-redis/tests.yml?branch=master)](https://github.com/redis/node-redis/actions/workflows/tests.yml)
-[![Coverage](https://codecov.io/gh/redis/node-redis/branch/master/graph/badge.svg?token=xcfqHhJC37)](https://codecov.io/gh/redis/node-redis)
-[![License](https://img.shields.io/github/license/redis/node-redis.svg)](https://github.com/redis/node-redis/blob/master/LICENSE)
+[![Tests](https://img.shields.io/github/actions/workflow/status/falkordb/node-falkordb/tests.yml?branch=master)](https://github.com/falkordb/node-falkordb/actions/workflows/tests.yml)
+[![Coverage](https://codecov.io/gh/falkordb/node-falkordb/branch/master/graph/badge.svg?token=xcfqHhJC37)](https://codecov.io/gh/falkordb/node-falkordb)
+[![License](https://img.shields.io/github/license/falkordb/node-falkordb.svg)](https://github.com/falkordb/node-falkordb/blob/master/LICENSE)
 
-[![Discord](https://img.shields.io/discord/697882427875393627.svg?style=social&logo=discord)](https://discord.gg/redis)
-[![Twitch](https://img.shields.io/twitch/status/redisinc?style=social)](https://www.twitch.tv/redisinc)
-[![YouTube](https://img.shields.io/youtube/channel/views/UCD78lHSwYqMlyetR0_P4Vig?style=social)](https://www.youtube.com/redisinc)
-[![Twitter](https://img.shields.io/twitter/follow/redisinc?style=social)](https://twitter.com/redisinc)
+[![Discord](https://img.shields.io/discord/697882427875393627.svg?style=social&logo=discord)](https://discord.com/invite/99y2Ubh6tg)
+[![Twitter](https://img.shields.io/twitter/follow/falkordb?style=social)](https://twitter.com/falkordb)
 
-node-falkordb is a modern, high performance [FalkorDB](https://www.falkordb.com) client for Node.js.
+falkordb is a modern, high performance [FalkorDB](https://www.falkordb.com) client for Node.js.
 
 ## Packages
 
 | Name                                         | Description                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [falkordb](./)                                  | [![Downloads](https://img.shields.io/npm/dm/falkordb.svg)](https://www.npmjs.com/package/falkordb) [![Version](https://img.shields.io/npm/v/refalkordbis.svg)](https://www.npmjs.com/package/redis)                                                                                                                                                                                                                                         |
+| [falkordb](./)                                  | [![Downloads](https://img.shields.io/npm/dm/falkordb.svg)](https://www.npmjs.com/package/falkordb) [![Version](https://img.shields.io/npm/v/refalkordbis.svg)](https://www.npmjs.com/package/falkordb)                                                                                                                                                                                                                                         |
 | [@falkordb/client](./packages/client)           | [![Downloads](https://img.shields.io/npm/dm/@falkordb/client.svg)](https://www.npmjs.com/package/@falkordb/client) [![Version](https://img.shields.io/npm/v/@falkordb/client.svg)](https://www.npmjs.com/package/@falkordb/client) [![Docs](https://img.shields.io/badge/-documentation-dc382c)](https://redis.js.org/documentation/client/)                                                                                               |
-| [@falkordb/graph](./packages/graph)             | [![Downloads](https://img.shields.io/npm/dm/@falkordb/graph.svg)](https://www.npmjs.com/package/@falkordb/graph) [![Version](https://img.shields.io/npm/v/@falkordb/graph.svg)](https://www.npmjs.com/package/@falkordb/graph) [![Docs](https://img.shields.io/badge/-documentation-dc382c)](https://redis.js.org/documentation/graph/) [Redis Graph](https://oss.redis.com/redisgraph/) commands                                          |
-
-> :warning: In version 4.1.0 we moved our subpackages from `@node-redis` to `@falkordb`. If you're just using `npm install redis`, you don't need to do anything—it'll upgrade automatically. If you're using the subpackages directly, you'll need to point to the new scope (e.g. `@falkordb/client` instead of `@node-falkordb/client`).
+| [@falkordb/graph](./packages/graph)             | [![Downloads](https://img.shields.io/npm/dm/@falkordb/graph.svg)](https://www.npmjs.com/package/@falkordb/graph) [![Version](https://img.shields.io/npm/v/@falkordb/graph.svg)](https://www.npmjs.com/package/@falkordb/graph) [![Docs](https://img.shields.io/badge/-documentation-dc382c)](https://redis.js.org/documentation/graph/) [FalkorDB](https://www.falkordb.com) commands                                          |
 
 ## Installation
 
-Start a redis via docker:
+Start a falkordb via docker:
 
 ``` bash
-docker run -p 6379:6379 -it redis/redis-stack-server:latest
+docker run -p 6379:6379 -it falkordb/falkordb:latest
 ```
 
-To install node-redis, simply:
+To install node falkordb, simply:
 
 ```bash
-npm install redis
+npm install falkordb
 ```
-
-> :warning: The new interface is clean and cool, but if you have an existing codebase, you'll want to read the [migration guide](./docs/v3-to-v4.md).
-
-Looking for a high-level library to handle object mapping? See [redis-om-node](https://github.com/redis/redis-om-node)!
 
 ## Usage
 
 ### Basic Example
 
 ```typescript
-import { createClient } from 'redis';
+import { createClient } from 'falkordb';
 
 const client = await createClient()
   .on('error', err => console.log('Redis Client Error', err))
