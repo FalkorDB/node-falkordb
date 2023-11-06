@@ -1,4 +1,4 @@
-import TestUtils from '@redis/test-utils';
+import TestUtils from '@falkordb/test-utils';
 import { SinonSpy } from 'sinon';
 import { promiseTimeout } from './utils';
 

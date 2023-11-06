@@ -5,13 +5,10 @@ This folder contains example scripts showing how to use Node Redis in different 
 | File Name                                | Description                                                                                                                                          |
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `blocking-list-pop.js`                   | Block until an element is pushed to a list.                                                                                                          |
-| `bloom-filter.js`                        | Space efficient set membership checks with a [Bloom Filter](https://en.wikipedia.org/wiki/Bloom_filter) using [RedisBloom](https://redisbloom.io).   |
 | `check-connection-status.js`             | Check the client's connection status.                                                                                                                |
 | `command-with-modifiers.js`              | Define a script that allows to run a command with several modifiers.                                                                                 |
 | `connect-as-acl-user.js`                 | Connect to Redis 6 using an ACL user.                                                                                                                |
 | `connect-to-cluster.js`                  | Connect to a Redis cluster.                                                                                                                          |
-| `count-min-sketch.js`                    | Estimate the frequency of a given event using the [RedisBloom](https://redisbloom.io) Count-Min Sketch.                                              |
-| `cuckoo-filter.js`                       | Space efficient set membership checks with a [Cuckoo Filter](https://en.wikipedia.org/wiki/Cuckoo_filter) using [RedisBloom](https://redisbloom.io). |
 | `dump-and-restore.js`                    | Demonstrates the use of the [`DUMP`](https://redis.io/commands/dump/) and [`RESTORE`](https://redis.io/commands/restore/) commands                   |
 | `get-server-time.js`                     | Get the time from the Redis server.                                                                                                                  |
 | `hyperloglog.js`                         | Showing use of Hyperloglog commands [PFADD, PFCOUNT and PFMERGE](https://redis.io/commands/?group=hyperloglog).                                      |
@@ -19,15 +16,10 @@ This folder contains example scripts showing how to use Node Redis in different 
 | `managing-json.js`                       | Store, retrieve and manipulate JSON data atomically with [RedisJSON](https://redisjson.io/).                                                         |
 | `pubsub-publisher.js`                    | Adds multiple messages on 2 different channels messages to Redis.                                                                                    |
 | `pubsub-subscriber.js`                   | Reads messages from channels using `PSUBSCRIBE` command.                                                                                             |
-| `search-hashes.js`                       | Uses [RediSearch](https://redisearch.io) to index and search data in hashes.                                                                         |
-| `search-json.js`                         | Uses [RediSearch](https://redisearch.io/) and [RedisJSON](https://redisjson.io/) to index and search JSON data.                                      |
-| `search-knn.js`                          | Uses [RediSearch vector similarity]([https://redisearch.io/](https://redis.io/docs/stack/search/reference/vectors/)) to index and run KNN queries.   |
 | `set-scan.js`                            | An example script that shows how to use the SSCAN iterator functionality.                                                                            |
 | `sorted-set.js`                          | Add members with scores to a Sorted Set and retrieve them using the ZSCAN iteractor functionality.                                                   |
 | `stream-producer.js`                     | Adds entries to a [Redis Stream](https://redis.io/topics/streams-intro) using the `XADD` command.                                                    |
 | `stream-consumer.js`                     | Reads entries from a [Redis Stream](https://redis.io/topics/streams-intro) using the blocking `XREAD` command.                                       |
-| `time-series.js`                         | Create, populate and query timeseries data with [Redis Timeseries](https://redistimeseries.io).                                                      |
-| `topk.js`                                | Use the [RedisBloom](https://redisbloom.io) TopK to track the most frequently seen items.                                                            |
 | `stream-consumer-group.js`               | Reads entries from a [Redis Stream](https://redis.io/topics/streams-intro) as part of a consumer group using the blocking `XREADGROUP` command.      |
 | `transaction-with-arbitrary-commands.js` | Mix and match supported commands with arbitrary command strings in a Redis transaction.                                                              |
 | `transaction-with-watch.js`              | An Example of [Redis transaction](https://redis.io/docs/manual/transactions) with `WATCH` command on isolated connection with optimistic locking.    |

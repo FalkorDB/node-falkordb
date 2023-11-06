@@ -8,7 +8,7 @@ import {
     createCluster as _createCluster,
     RedisClusterOptions,
     RedisClusterType as _RedisClusterType
-} from '@redis/client';
+} from '@falkordb/client';
 import RedisGraph from '@falkordb/graph';
 
 export * from '@falkordb/client';

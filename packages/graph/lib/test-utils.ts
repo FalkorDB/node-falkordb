@@ -1,9 +1,9 @@
-import TestUtils from '@redis/test-utils';
+import TestUtils from '@falkordb/test-utils';
 import RedisGraph from '.';
 
 export default new TestUtils({
-    dockerImageName: 'redislabs/redisgraph',
-    dockerImageVersionArgument: 'redisgraph-version'
+    dockerImageName: 'falkordb/falkordb',
+    dockerImageVersionArgument: 'falkordb-version'
 });
 
 export const GLOBAL = {

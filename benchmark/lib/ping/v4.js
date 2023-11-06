@@ -1,4 +1,4 @@
-import { createClient } from '@redis/client';
+import { createClient } from '@falkordb/client';
 
 export default async (host) => {
     const client = createClient({

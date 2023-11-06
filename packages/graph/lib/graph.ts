@@ -1,5 +1,5 @@
-import { RedisClientType } from '@redis/client/dist/lib/client/index';
-import { RedisCommandArgument, RedisFunctions, RedisScripts } from '@redis/client/dist/lib/commands';
+import { RedisClientType } from '@falkordb/client/dist/lib/client/index';
+import { RedisCommandArgument, RedisFunctions, RedisScripts } from '@falkordb/client/dist/lib/commands';
 import { QueryOptions } from './commands';
 import { QueryReply } from './commands/QUERY';
 

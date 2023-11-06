@@ -1,8 +1,8 @@
 import { createConnection } from 'net';
 import { once } from 'events';
-import RedisClient from '@redis/client/dist/lib/client';
-import { promiseTimeout } from '@redis/client/dist/lib/utils';
-import { ClusterSlotsReply } from '@redis/client/dist/lib/commands/CLUSTER_SLOTS';
+import RedisClient from '@falkordb/client/dist/lib/client';
+import { promiseTimeout } from '@falkordb/client/dist/lib/utils';
+import { ClusterSlotsReply } from '@falkordb/client/dist/lib/commands/CLUSTER_SLOTS';
 import * as path from 'path';
 import { promisify } from 'util';
 import { exec } from 'child_process';

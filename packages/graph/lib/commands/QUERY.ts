@@ -1,4 +1,4 @@
-import { RedisCommandArgument, RedisCommandArguments } from '@redis/client/dist/lib/commands/index';
+import { RedisCommandArgument, RedisCommandArguments } from '@falkordb/client/dist/lib/commands/index';
 import { pushQueryArguments, QueryOptionsBackwardCompatible } from '.';
 
 export const FIRST_KEY_INDEX = 1;
