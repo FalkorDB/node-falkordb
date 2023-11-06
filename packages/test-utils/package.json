@@ -1,5 +1,5 @@
 {
-  "name": "@redis/test-utils",
+  "name": "@falkordb/test-utils",
   "private": true,
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

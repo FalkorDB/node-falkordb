@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
-    "@redis/test-utils": "*",
+    "@falkordb/test-utils": "*",
     "@types/node": "^20.6.2",
     "@types/sinon": "^10.0.16",
     "@types/yallist": "^4.0.1",
