@@ -1,0 +1,9 @@
+.idea/
+.nyc_output/
+.vscode/
+coverage/
+dist/
+node_modules/
+.DS_Store
+dump.rdb
+documentation/

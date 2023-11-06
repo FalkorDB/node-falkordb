@@ -1,0 +1,12 @@
+.github/
+.vscode/
+docs/
+examples/
+packages/
+.deepsource.toml
+.release-it.json
+CONTRIBUTING.md
+SECURITY.md
+index.ts
+tsconfig.base.json
+tsconfig.json

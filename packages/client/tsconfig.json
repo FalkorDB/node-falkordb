@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist"
+  },
+  "include": [
+    "./index.ts",
+    "./lib/**/*.ts"
+  ],
+  "exclude": [
+    "./lib/test-utils.ts",
+    "./lib/**/*.spec.ts"
+  ],
+  "ts-node": {
+    "transpileOnly": true
+  },
+  "typedocOptions": {
+    "entryPoints": [
+      "./index.ts",
+      "./lib"
+    ],
+    "entryPointStrategy": "expand",
+    "out": "../../documentation/client"
+  }
+}
