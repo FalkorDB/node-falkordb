@@ -23,8 +23,8 @@
     "gh-pages": "gh-pages -d ./documentation -e ./documentation -u 'github-actions-bot <support+actions@github.com>'"
   },
   "dependencies": {
-    "@falkordb/client": "1.5.11",
-    "@falkordb/graph": "1.1.0"
+    "@falkordb/client": "1.5.12",
+    "@falkordb/graph": "1.1.1"
   },
   "devDependencies": {
     "@tsconfig/node14": "^14.1.0",
