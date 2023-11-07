@@ -7,7 +7,7 @@
 [![Discord](https://img.shields.io/discord/697882427875393627.svg?style=social&logo=discord)](https://discord.com/invite/99y2Ubh6tg)
 [![Twitter](https://img.shields.io/twitter/follow/falkordb?style=social)](https://twitter.com/falkordb)
 
-falkordb is a modern, high performance [FalkorDB](https://www.falkordb.com) client for Node.js.
+`falkordb`` is a modern, high performance [FalkorDB](https://www.falkordb.com) client for Node.js.
 
 ## Packages
 
@@ -51,7 +51,7 @@ The above code connects to localhost on port 6379. To connect to a different hos
 
 ```typescript
 createClient({
-  url: 'redis://alice:foobared@awesome.redis.server:6380'
+  url: 'redis://alice:foobared@cloud.falkordb.io:6379'
 });
 ```
 
@@ -134,7 +134,7 @@ Any command can be run on a new connection by specifying the `isolated` option. 
 This pattern works especially well for blocking commands—such as `BLPOP` and `BLMOVE`:
 
 ```typescript
-import { commandOptions } from 'redis';
+import { commandOptions } from 'falkordb';
 
 const blPopPromise = client.blPop(
   commandOptions({ isolated: true }),
@@ -202,14 +202,14 @@ redis.register_function {
 
 Here is the same example, but in a format that can be pasted into the `redis-cli`.
 
-```
+```bash
 FUNCTION LOAD "#!lua name=library\nredis.register_function{function_name=\"add\", callback=function(keys, args) return redis.call('GET', keys[1])+args[1] end, flags={\"no-writes\"}}"
 ```
 
 Load the prior redis function on the _redis server_ before running the example below.
 
 ```typescript
-import { createClient } from 'redis';
+import { createClient } from 'falkordb';
 
 const client = createClient({
   functions: {
@@ -238,7 +238,7 @@ await client.library.add('key', 2); // 3
 The following is an end-to-end example of the prior concept.
 
 ```typescript
-import { createClient, defineScript } from 'redis';
+import { createClient, defineScript } from 'falkordb';
 
 const client = createClient({
   scripts: {
