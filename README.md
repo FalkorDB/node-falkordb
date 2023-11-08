@@ -4,10 +4,10 @@
 [![Coverage](https://codecov.io/gh/falkordb/node-falkordb/branch/master/graph/badge.svg?token=xcfqHhJC37)](https://codecov.io/gh/falkordb/node-falkordb)
 [![License](https://img.shields.io/github/license/falkordb/node-falkordb.svg)](https://github.com/falkordb/node-falkordb/blob/master/LICENSE)
 
-[![Discord](https://img.shields.io/discord/697882427875393627.svg?style=social&logo=discord)](https://discord.com/invite/99y2Ubh6tg)
+[![Discord](https://img.shields.io/discord/1146782921294884966.svg?style=social&logo=discord)](https://discord.com/invite/99y2Ubh6tg)
 [![Twitter](https://img.shields.io/twitter/follow/falkordb?style=social)](https://twitter.com/falkordb)
 
-`falkordb`` is a modern, high performance [FalkorDB](https://www.falkordb.com) client for Node.js.
+`falkordb` is a modern, high performance [FalkorDB](https://www.falkordb.com) client for Node.js.
 
 ## Packages
 
