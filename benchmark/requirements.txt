@@ -1,1 +1,2 @@
 redisbench_admin>=0.5.24
+fonttools>=4.43.0 # not directly required, pinned by Snyk to avoid a vulnerability
