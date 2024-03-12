@@ -2,6 +2,7 @@ import * as CONFIG_GET from './CONFIG_GET';
 import * as CONFIG_SET from './CONFIG_SET';;
 import * as DELETE from './DELETE';
 import * as EXPLAIN from './EXPLAIN';
+import * as INFO from './INFO';
 import * as LIST from './LIST';
 import * as PROFILE from './PROFILE';
 import * as QUERY from './QUERY';
@@ -18,6 +19,8 @@ export default {
     delete: DELETE,
     EXPLAIN,
     explain: EXPLAIN,
+    INFO,
+    info: INFO,
     LIST,
     list: LIST,
     PROFILE,
