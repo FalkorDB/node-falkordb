@@ -9,13 +9,13 @@ import {
     RedisClusterOptions,
     RedisClusterType as _RedisClusterType
 } from '@falkordb/client';
-import RedisGraph from '@falkordb/graph';
+import Graph from '@falkordb/graph';
 
 export * from '@falkordb/client';
 export * from '@falkordb/graph';
 
 const modules = {
-    graph: RedisGraph,
+    graph: Graph,
 };
 
 export type RedisDefaultModules = typeof modules;

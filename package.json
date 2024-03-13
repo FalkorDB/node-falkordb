@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@falkordb/client": "^1.6",
-    "@falkordb/graph": "^2.0"
+    "@falkordb/graph": "^2.1"
   },
   "devDependencies": {
     "@tsconfig/node14": "^14.1.0",
