@@ -1,3 +1,5 @@
+# The development of this package has stopped, replaced by: https://github.com/FalkorDB/falkordb-ts/
+
 # FalkorDB
 
 [![Tests](https://img.shields.io/github/actions/workflow/status/falkordb/node-falkordb/tests.yml?branch=master)](https://github.com/falkordb/node-falkordb/actions/workflows/tests.yml)
