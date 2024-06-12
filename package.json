@@ -1,7 +1,7 @@
 {
   "name": "falkordb",
   "description": "A modern, high performance FalkorDB client",
-  "version": "5.0.1",
+  "version": "5.1.0",
   "license": "MIT",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@falkordb/client": "^1.6",
-    "@falkordb/graph": "^2.0"
+    "@falkordb/graph": "^2.1"
   },
   "devDependencies": {
     "@tsconfig/node14": "^14.1.0",
